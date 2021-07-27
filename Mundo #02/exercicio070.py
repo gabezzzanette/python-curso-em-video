@@ -17,34 +17,27 @@ prodMaisBarato = ''
 
 while True:
     
-    print('Deseja cadastrar um produto?')
-    opcao = int(input('[1- Sim]   |  [2- Não]\n'))
+    produto = str(input('Nome do produto: '))
+    preco = float(input('Preço: '))
     
-    if opcao == 1:
-        
-        produto = str(input('Nome do produto: '))
-        preco = float(input('Preço: '))
-        
-        total += preco
-        
-        # iniciar as variaveis
-        if cont == 0:
-            menorPreco = preco
-            prodMaisBarato = produto
-        
-        if preco < menorPreco:
-            prodMaisBarato = produto
-            
-        # contador para produtos maiores que mil reais
-        if preco > 1000:
-            custoMaiorDeMil += 1
+    cont += 1
+    total += preco
     
-    elif opcao == 2:
-        print('Encerrando programa...')
+    # iniciar as variaveis
+    if cont == 1 or preco < menorPreco:
+        menorPreco = preco
+        prodMaisBarato = produto
+    if preco > 1000:
+        custoMaiorDeMil += 1
+    
+    resposta = ' '
+    while resposta not in 'SN':
+        resposta = str(input('Deseja realizar um novo cadastro? (S/N)')).upper().strip()[0]
+    if resposta == 'N':
         break
-    else:
-        print('[ERRO]')
 
-print(f'O valor total: R${total:.2f}')
-print(f'{custoMaiorDeMil} produtos custando mais de R$1.000,00')
-print(f" O produto mais barato da compra foi :{prodMaisBarato}!")
+print('--------------------------------')
+print(f'Valor total: R${total:.2f}')
+print(f'Total de [{custoMaiorDeMil}] produto(s) custando acima de R$1.000,00')
+print(f'O produto mais barato da compra foi :{prodMaisBarato}!')
+print('--------------------------------')
