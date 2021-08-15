@@ -1,5 +1,6 @@
 # python-curso-em-video
-🐍 Python Course - cursoemvideo.com
+🐍 Python Course - http://cursoemvideo.com - automatic!
+[Curso em Video](http://cursoemvideo.com)
 
 Mundo #01: introduction to language, basic concepts, first program and some basic features;
 
