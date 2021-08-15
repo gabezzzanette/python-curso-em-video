@@ -21,7 +21,3 @@ while cont <= pNumeros:
     cont += 1
 
 print('\nFibonacci de {} sequências '.format(cont-1))
-
-
-
-

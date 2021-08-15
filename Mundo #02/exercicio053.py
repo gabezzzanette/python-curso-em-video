@@ -31,5 +31,3 @@ if junto == inverso:
     print('A frase digitada é palindromo')
 else:
     print('A frase não é palindromo')
-
-

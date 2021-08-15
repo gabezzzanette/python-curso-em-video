@@ -21,6 +21,3 @@ while num != 999:
 total -= 999
 cont -= 1
 print('Foram digitados {} números somando ao total {}'.format(cont, total))
-
-
-

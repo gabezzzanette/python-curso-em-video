@@ -50,3 +50,4 @@ while True:
     print('--*--' * 10)
 print('--*--' * 10)
 print('Você perdeu, que pena. Tente de novo!')
+

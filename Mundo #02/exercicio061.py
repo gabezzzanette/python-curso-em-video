@@ -13,4 +13,3 @@ while cont <= 10:
     print('{} '.format(p_termo))
     p_termo += razao
     cont += 1
-

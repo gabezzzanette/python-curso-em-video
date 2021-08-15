@@ -13,6 +13,3 @@ else:
     aumento = 15
 print('Bom dia, senhor(a) {},'.format(funcionario))
 print('Seu salário de R${} teve um aumento de {}% e salario atual é de R${}'.format(salario,aumento, salarioNovo))
-
-
-

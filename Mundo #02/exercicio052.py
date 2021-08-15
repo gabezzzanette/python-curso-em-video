@@ -11,3 +11,4 @@ if cont == 1 or cont > 2:
     print('O número não é primo')
 else:
     print('O número é primo!!')
+    

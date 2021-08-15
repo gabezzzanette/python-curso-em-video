@@ -15,3 +15,4 @@ elif idade < 18:
     print('Falta {} anos para se alisar.'.format(18 - idade))
 else:
     print('Está na hora de se alistar no exército')
+    

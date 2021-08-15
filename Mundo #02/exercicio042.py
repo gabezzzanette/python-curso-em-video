@@ -21,3 +21,4 @@ if reta2 + reta3 > reta1 and reta2 + reta1 > reta3 and reta3 + reta1 >  reta2:
         print('Esósceles')
 else:
     print('Não forma um triangulo')
+    

@@ -41,3 +41,4 @@ print(f'Valor total: R${total:.2f}')
 print(f'Total de [{custoMaiorDeMil}] produto(s) custando acima de R$1.000,00')
 print(f'O produto mais barato da compra foi :{prodMaisBarato}!')
 print('--------------------------------')
+

@@ -13,6 +13,3 @@ for x in range(0, 5):
         if peso > maior:
             maior = peso
 print('O maior peso foi {}kg e o menor foi {}kg'.format(maior, menor))
-
-
-
