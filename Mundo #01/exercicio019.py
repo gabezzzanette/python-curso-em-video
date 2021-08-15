@@ -4,3 +4,4 @@ from random import choice
 
 alunos = ['Ana', 'Bruna','Gabe','Natan']
 print('O aluno escolhido pelo professor foi: {}'.format(choice(alunos)))
+

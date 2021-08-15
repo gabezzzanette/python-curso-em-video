@@ -17,3 +17,4 @@ print('O dado esta em MAIUSCULO? ', dado_usuario.isupper())
 print('O dado é um digito? ', dado_usuario.isdigit())
 print('O dado é um printtable? ', dado_usuario.isprintable())
 print('O dado é um titulo? ', dado_usuario.istitle())
+

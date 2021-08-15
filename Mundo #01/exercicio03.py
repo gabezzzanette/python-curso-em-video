@@ -9,3 +9,4 @@
 
 soma = int(input('Digite um numero ')) + int(input('Digite outro numero: '))
 print('O resultado da soma foi {}'.format(soma))
+
