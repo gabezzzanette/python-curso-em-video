@@ -28,7 +28,7 @@ while True:
     
     rVerTabela = ' '
     if rVerTabela not in 'SN':
-        rVerTabela = str(input('Deseja ver a tabela inteira ? S/N'))
+        rVerTabela = str(input('Deseja ver a tabela inteira ? S/N')).upper()
     if rVerTabela == 'S':
         print(f'{tabelaBrasileirao}\n')
         break
