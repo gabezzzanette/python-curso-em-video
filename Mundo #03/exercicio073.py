@@ -1,21 +1,41 @@
-
 #
-# Exercício Python 72: Crie um programa que tenha uma tupla totalmente
-# preenchida com uma contagem por extenso, de zero até vinte.
-# Seu programa deverá ler um número pelo teclado (entre 0 e 20)
-# e mostrá-lo por extenso
+# Exercício Python 73: Crie uma tupla preenchida com os 20 primeiros colocados da Tabela do
+# Campeonato Brasileiro de Futebol, na ordem de colocação. Depois mostre:
+#
+# a) Os 5 primeiros times.
+#
+# b) Os últimos 4 colocados.
+#
+# c) Times em ordem alfabética.
+#
+# d) Em que posição está o time da Chapecoense.
 #
 
-tupla = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
-         'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito',
-         'dezenove', 'vinte')
+tabelaBrasileirao = ('Atlético Mineiro', 'Palmeiras', 'Fortaleza', 'Bragantino',
+                     'Flamengo', 'Athletico-PR', 'Atlético Goianiense', 'Ceará',
+                     'Santos', 'Corinthians', 'Internacional', 'Juventude', 'Bahia',
+                     'São Paulo', 'Fluminense', 'Cuiabá', 'Sport Recife', 'América-MG',
+                     'Grêmio', 'Chapecoense')
+count = 0
 
+print(f'''
+            +------------------------------------------------------+
+            |        TABELA CAMPEONATO BRASILEIRO DE FUTEBOL       |
+            +------------------------------------------------------+
+    ''')
 
 while True:
-    print('---' * 4)
-    num = int(input('Digite um numero entre ZERO E VINTE \n'))
+    
+    rVerTabela = ' '
+    if rVerTabela not in 'SN':
+        rVerTabela = str(input('Deseja ver a tabela inteira ? S/N'))
+    if rVerTabela == 'S':
+        print(f'{tabelaBrasileirao}\n')
+        break
+    if rVerTabela == 'N':
+        break
 
-    if num < 0 or num > 20:
-        print('Número inválido, tente novamente')
-    else:
-        print(f'Digitado numero [{num}] corresponde ao [{tupla[num]}]\n')
+print(f'Primeiros 05 times da Tabela:\n{tabelaBrasileirao[:5]}\n')
+print(f'Os últimos 04 colocados:\n{tabelaBrasileirao[-4:]}\n')
+print(f'Ordem alfabética da Tabela:\n{sorted(tabelaBrasileirao)}\n')
+print(f'O time Chapecoense está na posição {tabelaBrasileirao.index("Chapecoense") + 1}')
