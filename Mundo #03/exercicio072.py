@@ -21,7 +21,7 @@ while True:
         break
     rSair = ' '
     if rSair not in 'SN':
-        rSair = str(input('Deseja digitar novamente? S/N')).strip().upper()
+        rSair = str(input('Deseja digitar novamente? S/N'))
     if rSair == 'N':
         print('[....Finalizando....]')
         break
