@@ -4,10 +4,10 @@
 # e mostrá-lo por extenso
 #
 
-tupla = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco',
+tupla = ['zero', 'um', 'dois', 'tres', 'quatro', 'cinco',
          'seis', 'sete', 'oito', 'nove', 'dez', 'onze',
          'doze', 'treze', 'quatorze', 'quinze', 'dezesseis',
-         'dezessete', 'dezoito', 'dezenove', 'vinte')
+         'dezessete', 'dezoito', 'dezenove', 'vinte']
 
 while True:
     while True:

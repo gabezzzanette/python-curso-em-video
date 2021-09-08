@@ -5,9 +5,9 @@
 
 import random
 
-randomNum = [random.randint(0, 100), random.randint(0, 100),
+randomNum = (random.randint(0, 100), random.randint(0, 100),
              random.randint(0, 100), random.randint(0, 100),
-             random.randint(0, 100)]
+             random.randint(0, 100))
 
 print(f"Números aleatórios: {randomNum}")
 print(f"Maior valor  --- {max(randomNum)}")

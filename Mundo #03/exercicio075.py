@@ -1,12 +1,25 @@
-# Exercício Python 074: Crie um programa que vai
-# gerar cinco números aleatórios e colocar em uma tupla.
-# Depois disso, mostre a listagem de números gerados e
-# também indique o menor e o maior valor que estão na tupla
+# Exercício Python 075: Desenvolva um programa
+# que leia quatro valores pelo teclado e guarde-os
+# em uma tupla. No final, mostre:
+#
+# A) Quantas vezes apareceu o valor 9.
+#
+# B) Em que posição foi digitado o primeiro valor 3.
+#
+# C) Quais foram os números pares.
 
-import random
 
-randomNum = random.sample(range(0, 100), 5)
+numeros = (int(input("Digite numero inteiro: ")), int(input("Digite numero inteiro: ")),
+           int(input("Digite numero inteiro: ")), int(input("Digite numero inteiro: ")))
 
-print(f"Números aleatórios: {randomNum}")
-print(f"Maior valor  --- {max(randomNum)}")
-print(f"Menor valor  --- {min(randomNum)}")
+print(f"O valor 9 aparece {numeros.count(9)} vezes.")
+
+if 3 in numeros:
+    print(f"O número 3 foi digitado na posição {numeros.index(3)+ 1}º")
+else:
+    print("O número 3 não foi digitado.")
+    
+print("Números pares digitados: ")
+for n in numeros:
+    if n % 2 == 0:
+        print(n, end=' ')
