@@ -8,7 +8,6 @@
 #
 # C) Quais foram os números pares.
 
-
 numeros = (int(input("Digite numero inteiro: ")), int(input("Digite numero inteiro: ")),
            int(input("Digite numero inteiro: ")), int(input("Digite numero inteiro: ")))
 
