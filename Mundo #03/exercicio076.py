@@ -14,4 +14,4 @@ for t in range(0, len(tabela)):
     if t % 2 == 0:
         print(f'{tabela[t]:.<33}', end='')
     else:
-        print(f'R${tabela[t]:>10}')
+        print(f'R${tabela[t]:>10.2f}')
