@@ -10,6 +10,10 @@ tabela = ('Sofá', 950.99,
           'Tv 50 polegadas', 2799.99,
           'Notebook', 3500.49)
 
+print("-" * 46)
+print(f'{"Tabela de Preços":^45}')
+print("-" * 46)
+
 for t in range(0, len(tabela)):
     if t % 2 == 0:
         print(f'{tabela[t]:.<33}', end='')
