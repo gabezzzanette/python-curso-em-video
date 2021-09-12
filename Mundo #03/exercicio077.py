@@ -5,10 +5,8 @@
 palavras = ('Cafe', 'Dormir', 'Cachorro', 'Arvore',
             'Montanha', 'Dinheiro', 'Presidente', 'Genocida')
 
-# achar as letras vogais da palavra
 for palavra in palavras:
     print(f'\nNa palavra {palavra} temos - ', end=' ')
     for letra in palavra:
-        
         if letra.lower() in 'aeio':
             print(letra.upper(), end=' ')
