@@ -3,7 +3,7 @@
 # No final, mostre qual foi o maior e o menor
 # valor digitado e as suas respectivas posições na lista.
 
-listnumbers = []
+listnumbers = list()
 smaller = largest = 0
 
 for count in range(0, 5):
